@@ -1,0 +1,24 @@
+<%= form_for(@story) do |f| %>
+<%= f.label :title %>
+<h1><%= f.text_area :title %></h1>
+<%= f.label :beginning %>
+<h2><%= f.text_area :beginning %></h2>
+<%= f.label :development %>
+<h2><%= f.text_area :development %></h2>
+<%= f.label :twist %>
+<h2><%= f.text_area :twist %></h2>
+<%= f.label :conclusion %>
+<h2><%= f.text_area :conclusion %></h2>
+<%= f.submit %><br><br><br>
+<%= f.label "題名" %>
+<h1><%= f.text_area :daimei %></h1>
+<%= f.label "起" %>
+<h2><%= f.text_area :ki %></h2>
+<%= f.label "承" %>
+<h2><%= f.text_area :shou %></h2>
+<%= f.label "転" %>
+<h2><%= f.text_area :ten %></h2>
+<%= f.label "結" %>
+<h2><%= f.text_area :ketsu %></h2>
+<%= f.submit "物語を更新する"%>
+<% end %>

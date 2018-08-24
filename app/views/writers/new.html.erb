@@ -1,0 +1,12 @@
+CREATE A NEW WRITER!
+新しいライターを作成する!
+
+<%= form_for @writer do |f| %>
+<%= f.label :pen_name %>
+<%= f.text_field :pen_name %>
+<br>
+<%= f.label :password %>
+<%= f.text_field :password %>
+<br>
+<%= f.submit %>
+<% end %>

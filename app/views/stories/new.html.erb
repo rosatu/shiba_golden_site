@@ -1,0 +1,40 @@
+<style>
+
+  .new-story-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 900px;
+    min-width: 450px;
+    margin: 25px auto;
+    padding: 0 35px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .new-story-header h1:nth-child(2) {
+    margin-top: 0;
+  }
+</style>
+
+<div class="new-story-form">
+
+  <div class="new-story-header">
+    <h1>起</h1>
+    <h1>"The Beginning"</h1>
+  </div>
+  <%= form_for(@story) do |f| %>
+  <h3>What is the title of your story?</h3>
+  <%= f.text_field :title %>
+  <h3>Here is an example of a story's beginning:<br>
+    "Once upon a time there was a mouse who lived in a jelly donut."<br>
+    <br>Please write the beginning of your story:</h3><br>
+  <%= f.text_area :beginning %><br>
+  <h3>On the next page your partner will see the beginning of your story translated into Japanese and have the option to write the next section. Are you ready to move on?</h3><br>
+  <%= f.submit "yes, we're ready"%>
+<% end %>
+</div>

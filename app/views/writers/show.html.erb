@@ -1,0 +1,18 @@
+Writer Show Page
+<hr>
+<hr>
+Name: <%= @writer.pen_name %>
+<br>
+Stories: <% @writer.stories.each do |story| %>
+<p><%= story.title %></p>
+<% end %>
+<br>
+
+<%= link_to 'Edit Writer', edit_writer_path(@writer) %>
+<%= link_to '物語を編集する', edit_writer_path(@writer)%>
+<br>
+<%= link_to "Delete Writer", @writer, method: :delete, data: { confirm: "Do you really want to delete this writer?" } %>
+<%= link_to "物語を削除する", @writer, method: :delete, data: { confirm: "Do you really want to delete this story?" } %>
+<br>
+<%= link_to 'See All Writers', writers_path %>
+<%= link_to 'すべての物語をみる', writers_path %>

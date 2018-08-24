@@ -1,0 +1,14 @@
+<h1>転,"the twist"</h1>
+<h4>This is your story so far:</h4>
+<h2><%= @story.ki %></h2>
+<h2><%= @story.shou %></h2>
+
+<h3><%= @story.beginning %></h3>
+<h3><%= @story.development %></h3>
+
+<h4>Now write the twist:<h4>
+<%= form_tag savetwist_path(@story), method: :post do %>
+  <%= label_tag "twist" %>
+  <%= text_area_tag 'story[twist]' %>
+  <%= submit_tag 'We are ready to write the conclusion'  %>
+<% end %>
