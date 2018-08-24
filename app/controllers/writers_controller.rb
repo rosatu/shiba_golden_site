@@ -1,5 +1,8 @@
 class WritersController < ApplicationController
+<<<<<<< HEAD
   before_action :authorized, except: [:new, :create]
+=======
+>>>>>>> natsuki
   before_action :find_writer, only: [:show, :edit, :update]
 
   def index
@@ -16,7 +19,11 @@ class WritersController < ApplicationController
   def create
     @writer = Writer.new(writer_params)
     if @writer.save
+<<<<<<< HEAD
       redirect_to login_path
+=======
+      redirect_to @writer
+>>>>>>> natsuki
     else
       render :new
     end
@@ -40,10 +47,13 @@ class WritersController < ApplicationController
 
   private
 
+<<<<<<< HEAD
   def authorized
       redirect_to login_path unless session[:writer_id]
   end
 
+=======
+>>>>>>> natsuki
   def find_writer
     @writer = Writer.find(params[:id])
   end

@@ -17,8 +17,13 @@ class TranslateHelper
 
   def set_up_google_translation_instance
     Google::Cloud::Translate.new(
+<<<<<<< HEAD
       project: 'shiba-golden',
       keyfile: '/Users/flatironschool/Development/code/rails/natsuki_rosa_website/config/application.yml'
+=======
+      project: 
+      keyfile:
+>>>>>>> natsuki
     )
   end
 end

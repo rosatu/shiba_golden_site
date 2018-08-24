@@ -19,6 +19,14 @@
   .new-story-header h1:nth-child(2) {
     margin-top: 0;
   }
+<<<<<<< HEAD
+=======
+
+  h5 {
+    margin-top: 0;
+  }
+
+>>>>>>> natsuki
 </style>
 
 <div class="new-story-form">
@@ -29,12 +37,25 @@
   </div>
   <%= form_for(@story) do |f| %>
   <h3>What is the title of your story?</h3>
+<<<<<<< HEAD
   <%= f.text_field :title %>
   <h3>Here is an example of a story's beginning:<br>
     "Once upon a time there was a mouse who lived in a jelly donut."<br>
     <br>Please write the beginning of your story:</h3><br>
   <%= f.text_area :beginning %><br>
   <h3>On the next page your partner will see the beginning of your story translated into Japanese and have the option to write the next section. Are you ready to move on?</h3><br>
+=======
+  <h5>物語のタイトルを記入してください。</h5>
+  <%= f.text_field :title %>
+  <h3>Here is an example of a story's beginning:<br>
+    "Once upon a time there was a mouse who lived in a jelly donut."<br>
+  <h5>さっそく物語を書き始めてみましょう。<br>例）"むかしむかし、ジェリードーナッツの中にねずみが住んでいました。"</h5><br>
+    <br>Please write the beginning of your story:</h3><br>
+    <h5>ここに物語のはじめを記入してください。</h5><br>
+  <%= f.text_area :beginning %><br>
+  <h3>On the next page your partner will see the beginning of your story translated into Japanese and have the option to write the next section. Are you ready to move on?</h3><br>
+  <h5>次のページでは、あなたのパートナーがあなたが書いた物語の日本語訳を確認し、物語の続きを書くことができます。準備はよろしいですか？</h5><br>
+>>>>>>> natsuki
   <%= f.submit "yes, we're ready"%>
 <% end %>
 </div>
