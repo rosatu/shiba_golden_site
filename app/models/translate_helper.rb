@@ -17,7 +17,7 @@ class TranslateHelper
 
   def set_up_google_translation_instance
     Google::Cloud::Translate.new(
-      project: 
+      project: 'shiba-golden'
       keyfile:
     )
   end
