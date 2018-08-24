@@ -1,0 +1,16 @@
+
+これまでのお話はこちら：
+<h2><%= @story.ki %></h2>
+<h2><%= @story.shou %></h2>
+<h2><%= @story.ten %></h2>
+
+<h2><%= @story.beginning %></h2>
+<h2><%= @story.development %></h2>
+<h2><%= @story.twist %></h2>
+
+ここに次の物語を書いてください＃＃＃＃：
+<%= form_tag saveconclusion_path(@story), method: :post do %>
+  <%= label_tag '承（conclusion）' %>
+  <%= text_area_tag 'story[ketsu]' %>
+  <%= submit_tag '保存して次の物語にすすむ＃＃＃＃ket' %>
+<% end %>

@@ -1,0 +1,13 @@
+作者について
+<hr>
+<hr>
+名前: <%= @writer.pen_name %>
+<br>
+
+物語: <% @writer.stories.each do |story| %>
+<p><%= link_to story.title, story_path(story) %></p>
+<% end %>
+<br>
+<%= link_to '英文訳へ', 'app/views/writers/show.html.erb' %>
+<%= link_to 'Edit Writer', edit_writer_path(@writer) %>
+<%= link_to 'See All Writers', writers_path %>

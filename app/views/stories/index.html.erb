@@ -1,0 +1,54 @@
+
+<style>
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.story-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background-color: rgba(155, 155, 155, 0.7);
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+  font-size: 30px;
+  text-align: center;
+  transition: 0.3s
+}
+
+.story-card:hover {
+  background-color: rgba(55, 155, 155, 0.95);
+  transform: scale(1.15);
+}
+
+.story-card a {
+  color: #FFFFFF;
+}
+
+.story-card a:hover {
+  text-decoration: none;
+}
+</style>
+
+<div class="row">
+  <br>
+  <p><center><h2>Welcome to the library! Feel free to read a story.</h2><br></center></p>
+  <p><center><h4>物語の図書館へようこそ！物語を選んでください。</h4><br>
+  </center></p>
+  <div class="flex-container">
+    <% @stories.each do |story| %>
+    <div class="story-card">
+      <%= link_to "#{story.title}\r\n#{story.daimei}", story_path(story) %>
+    </div>
+    <% end %>
+  </div>
+  <p><center><h2><%= link_to 'Write your own story', new_story_path %></h2>
+  </center></p>
+</div>

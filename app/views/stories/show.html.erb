@@ -1,0 +1,20 @@
+<br>
+<h1>"<%= @story.title %>"</h1>
+
+<br>
+ <%= "#{@story.beginning} #{@story.development} #{@story.twist} #{@story.conclusion}" %>
+<br><br><br><br><br>
+<h1>"<%= @story.daimei %>"</h1>
+<br>
+ <%= "#{@story.ki} #{@story.shou} #{@story.ten} #{@story.ketsu}" %>
+<br><br><br><br><br>
+<hr>
+
+<%= link_to 'Edit This Story', edit_story_path(@story) %>
+<%= link_to '物語を編集する', edit_story_path(@story) %>
+<br>
+<%= link_to "Delete This Story", @story, method: :delete, data: { confirm: "Do you really want to delete this beautiful story?" } %>
+<%= link_to "物語を削除する", @story, method: :delete, data: { confirm: "Do you really want to delete this story?" } %>
+<br>
+<%= link_to 'See All Stories', stories_path %>
+<%= link_to 'すべての物語をみる', stories_path %>

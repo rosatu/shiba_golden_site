@@ -1,0 +1,10 @@
+<h1>承,"the development"</h1>
+<h4>これまでのお話はこちら：</h4>
+<h2><%= @story.beginning %></h2>
+<h2><%= @story.ki %></h2>
+
+<h4>ここに次の物語を書いてください：</h4>
+<%= form_tag savedevelopment_path(@story), method: :post do %>
+  <%= text_area_tag 'story[shou]' %>
+  <%= submit_tag '保存して次の物語にすすむ' %>
+<% end %>
