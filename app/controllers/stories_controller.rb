@@ -10,6 +10,11 @@ class StoriesController < ApplicationController
   end
 
   def show
+    translate_helper = TranslateHelper.new
+    @portuguesestorytitle = translate_helper.translate_text("#{@story.title}", 'pt').text
+    @portuguesestory = translate_helper.translate_text("#{@story.beginning} #{@story.development} #{@story.twist} #{@story.conclusion}", 'pt').text
+    @spanishstorytitle = translate_helper.translate_text("#{@story.title}", 'es').text
+    @spanishstory = translate_helper.translate_text("#{@story.beginning} #{@story.development} #{@story.twist} #{@story.conclusion}", 'es').text
   end
 
   def new

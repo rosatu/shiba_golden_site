@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "shiba-golden",
+  "private_key_id": "43f03ef49b787ec578ac27a0ebecf02dcea55110",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBD8hGvQlTnxof\n+hNHjILalQN+J5yNjkREKJOUtY8eMTEnx0xOh3VNjxZR8Tag9osFMsIfIbVWEF8q\ncER3bPENEi4ECSRsQeg8RPSodz6fgv6Nl0XQaDzEgqMveC3hLkG0FPF1nVTFdBBj\nQwXr67CCTf4m+l10Q6pN8XdJ88eUK2mDyxDBzsL0K4kgCGmMrQd+wQ7jsKl2bYZY\nic3Uv9uwRXxl1GIAf8tEyuEHCRP2wlUCBNbOFKHhrvSCIHBUWo453dhmfxzKMQlj\n0t1zYFLQXy6Qg7fLLbd9ZNqVNhfpX1O3SDJpVi6M0ThnFW/7CnYD3PTichZvihFo\n017q+EUvAgMBAAECggEARkLjJXNosIknrdmKKLDncntm0QPDgvTyvUdzJlzJIDjQ\n5eQvTikYNMjNW7cIpZ30TEkDwua2owLET6KaGEiKlbI3EvrsyYVW6pBB5gm3vb+j\nuo4CN22oJ/BPSVhYgioeeVZh5ecDUfUCfc2HmyukileuFitp1YVGtqUZP827pZ1h\nJ8bEZfcfRYRHvYpYSZVFi+OZZjoO51OvCXXp3sr0Ch5aWK5ws3CLvTK7AGop7kWr\nDJ++eF5w1//F94/3dqGqyXI/DnChJrQkzLxlnEGzL06jTZO45F4dOASY3W9IQ26G\nQM4c+gyCv4S3fAbqU+T+dybX9lxmT/llbDMKAnKvgQKBgQDjD7jsiUyzVMZh3dZx\nz3SvVzmUH1vH42uzQTF4xr2JazCjsvELN937M//uwl5db7Txcbc9ZCK6qid/znot\nqCy46UHPRkQScV9IwkazYpUvNytCubCfzyljjjcCwzDxGVTbSaEejzZXtvBty+HM\njAMaEZXdl6XtPHl6jMAHdPJCwQKBgQDZqsID+FP6/ILnP0DbTrF6oMgiRdAvFgWy\nBTTP7AeB4ctOwQat/jtGjaMy5FKsu+3JYGyQV8594uPx8e9+VSQrNlhCmymaap9r\nKb2DJ93laNynJ4nrc3T/8d1Htvh6lBOC4QgeoySmX9FIIo4bCXS/xnjGMytsKRjA\nyc1xst+z7wKBgQDSGFojg2dVB7wIEhu6cxqkozDDvcBO1D9zPX9pIXt/C4+V6Jzg\npHDhXtwRMAfgrNvgDDhgtabs0UR7HbIvTM0Uy7/46itSZVSlHh4NHcqsRX/h3a9w\nL188nvqHs9Q1QhsiTJ6oiBrgToVpEp17hpHYLS1ePFNrj+lXW6TTQYJoAQKBgAC6\nNFnFC6rMCzfwmyvgcHFjdie/KfnuTeiRYeLL/B5v/bjupjIQpmwO7xutbaVMH3hL\nzTESSgtbpb1aPJ2kdTF7xgG6+QGeF5hJFGwKxxAMMKiSVkCmKx7r1Px3XQ8zzXjj\nfZ50lxvDODTQgL8QYgZ+CEtJQnzjCkUip4AYw+ybAoGANHFlSbheiET4/dTa9GCR\nc7+qK3iHimnznihfpkoNcgz8f7+Hny49BOJt0n+bIkojBiim5XoYYdOngGxVdMDc\n3rp/PW0QATTZdXlpKRem86G6P06EtfQBwp3lhHoAv271Hvi8amGHj/hj8Dcc1V5e\nEu8inmbmkSM3K5XyEdWm4TA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "shiba-golden@shiba-golden.iam.gserviceaccount.com",
+  "client_id": "106237707941310949742",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shiba-golden%40shiba-golden.iam.gserviceaccount.com"
+}

@@ -1,4 +1,5 @@
 class WritersController < ApplicationController
+  before_action :authorized, except: [:new, :create]
   before_action :find_writer, only: [:show, :edit, :update]
 
   def index
@@ -15,7 +16,7 @@ class WritersController < ApplicationController
   def create
     @writer = Writer.new(writer_params)
     if @writer.save
-      redirect_to @writer
+      redirect_to login_path
     else
       render :new
     end
@@ -38,6 +39,10 @@ class WritersController < ApplicationController
   end
 
   private
+
+  def authorized
+      redirect_to login_path unless session[:writer_id]
+  end
 
   def find_writer
     @writer = Writer.find(params[:id])

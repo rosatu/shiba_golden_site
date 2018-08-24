@@ -54,3 +54,8 @@ the dog turned from a Shiba Inu into a Golden Retriever.", conclusion: "Happy en
 た。", ki: "かつて、NatsukiとRosaは犬を見つけました。", shou: "犬は寂しそうな顔で\r\nNatsukiとRosaを見
 つめていました。", ten: "そして、犬は柴犬をゴールデンレトリーバーに変えた。そして、それは滝になって、
 面的に落ち始めました。", ketsu: "めでたし、めでたし。")
+Story.create(title: "Me and Rosa", beginning: "Once upon a time there was me and Rosa.", develo
+pment: "And Nikoshi came.", twist: "But Nkosi was rock climbing and he climber too hig...", conclusion
+: "And it was only Rosa and Kevin.", daimei: "かつて、私とローザがいました。", ki: "かつて、私とローザがいました。", shou: "そしてニコ
+シがきました。", ten: "しかし、Nkosiはロッククライミングであり、彼はあまりにも高く登ると私たちに落ちた
+。", ketsu: "そして、ローサとケビンだけだった。")
