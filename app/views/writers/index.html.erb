@@ -2,20 +2,14 @@
 
 <ul>
 <% @writers.each do |writer| %>
-<<<<<<< HEAD
 <%= link_to writer.pen_name, writer_path(writer) %>
-=======
 <li>
 <%= link_to writer.pen_name, writer_path(writer) %>
 </li>
->>>>>>> natsuki
 <br>
 <% end %>
 </ul>
 
 <%= link_to 'Create A New Writer!', new_writer_path %>
-<<<<<<< HEAD
 <%= link_to 'Edit This Writer!', edit_writer_path %>
 <%= link_to 'See All Stories!', edit_writer_path %>
-=======
->>>>>>> natsuki
