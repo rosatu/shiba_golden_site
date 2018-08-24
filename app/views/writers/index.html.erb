@@ -1,12 +1,43 @@
-<h2>All WRITERS</h2>
+<style>
 
-<ul>
-<% @writers.each do |writer| %>
-<li>
-<%= link_to writer.pen_name, writer_path(writer) %>
-</li>
-<br>
-<% end %>
-</ul>
+  .index-writer-form {
+    border-radius: 25px;
+    background-color: rgba(155, 155, 155, 0.5);
+    min-width: 450px;
+    margin: 25px auto;
+    padding: 25px 0;
+    text-align: center;
+    transition: 0.3s;
+  }
 
-<%= link_to 'Create A New Writer!', new_writer_path %>
+  .writer-list {
+    padding: 20px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 500px;
+  }
+
+  .writer-item {
+    height: 50px;
+    font-size: 20px;
+  }
+</style>
+
+<div class="index-writer-form">
+  <h1>All WRITERS</h1>
+
+  <ul class="writer-list">
+    <% @writers.each do |writer| %>
+      <li class="writer-item">
+        <%= link_to writer.pen_name, writer_path(writer) %>
+      </li>
+      <br>
+    <% end %>
+  </ul>
+
+  <%= link_to 'Create A New Writer!', new_writer_path, class: 'btn btn-info btn-lg' %>
+</div>

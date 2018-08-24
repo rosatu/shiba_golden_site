@@ -1,11 +1,40 @@
-CREATE A NEW WRITER!
+<style>
 
+  .new-writer-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 900px;
+    min-width: 450px;
+    margin: 25px auto;
+    padding: 0 35px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .new-writer-header {
+    /* margin-top: 0; */
+  }
+
+</style>
+
+<div class="new-writer-form">
+
+CREATE A NEW WRITER!
+<div class="new-writer-header">
 <%= form_for @writer do |f| %>
 <%= f.label :pen_name %>
 <%= f.text_field :pen_name %>
+
 <br>
 <%= f.label :password %>
 <%= f.text_field :password %>
 <br>
 <%= f.submit %>
+</div>
 <% end %>
+</div>

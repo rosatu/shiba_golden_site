@@ -1,3 +1,25 @@
+<style>
+
+  .edit-story-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 900px;
+    min-width: 450px;
+    margin: 25px auto;
+    padding: 0 35px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+</style>
+
+<div class="edit-story-form">
+
 <%= form_for(@story) do |f| %>
 <%= f.label :title %>
 <h1><%= f.text_area :title %></h1>
@@ -22,3 +44,5 @@
 <h2><%= f.text_area :ketsu %></h2>
 <%= f.submit "物語を更新する"%>
 <% end %>
+
+</div>

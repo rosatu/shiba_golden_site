@@ -1,3 +1,20 @@
+<style>
+
+  .show-story-form {
+    border-radius: 25px;
+    background-color: rgba(155, 155, 155, 0.5);
+    height: 900px;
+    min-width: 450px;
+    margin: 25px auto;
+    padding: 0 35px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+</style>
+
+<div class="show-story-form">
 <br>
 <h1>"<%= @story.title %>"</h1>
 
@@ -18,3 +35,4 @@
 <br>
 <%= link_to 'See All Stories', stories_path %>
 <%= link_to 'すべての物語をみる', stories_path %>
+</div>
